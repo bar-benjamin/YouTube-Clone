@@ -28,7 +28,7 @@ function NavBar() {
     <nav className={styles.nav}>
       <Link href="/">
         <span className={styles.logoContainer}>
-          <img className={styles.logo} src="/youtube-logo.svg" alt="YouTube Logo" />
+          <img className={styles.logo} src="/youtube-logo.svg" alt="YouTube Logo" width="180" height="40"/>
         </span>
       </Link>
       { 
