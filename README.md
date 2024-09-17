@@ -1,7 +1,5 @@
 # YouTube Clone
 
-# Youtube Clone
-
 ### UI
 
 ![preview1](./images/preview1.png)
