@@ -5,6 +5,7 @@ const generateUploadUrlFunction = httpsCallable(functions, 'generateUploadUrl');
 const getVideosFunction = httpsCallable(functions, 'getVideos');
 
 export async function uploadVideo(file: File) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const response: any = await generateUploadUrlFunction({
     fileExtension: file.name.split('.').pop()
   });
@@ -31,6 +32,7 @@ export interface Video {
 }
 
 export async function getVideos() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const response: any = await getVideosFunction();
   return response.data as Video[];
 }
